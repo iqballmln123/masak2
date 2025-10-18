@@ -49,7 +49,7 @@ fun TopAppBarWithLogout(
 private fun LogoutAction(){
     val context = LocalContext.current
     var expanded by remember { mutableStateOf(false) }
-    IconButton(onClick = { }) {
+    IconButton(onClick = { expanded = true }) {
         Icon(
             imageVector = Icons.Filled.MoreVert,
             contentDescription = stringResource(R.string.lainnya),
