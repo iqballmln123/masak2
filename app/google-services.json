@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "66235086351",
+    "project_id": "masak2",
+    "storage_bucket": "masak2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:66235086351:android:9be5ee1a0ff95e0099d57a",
+        "android_client_info": {
+          "package_name": "com.iqballmln0143.masak2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "66235086351-0a5bq3o2lkrg0h28cnna3sudp43u7jc1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iqballmln0143.masak2",
+            "certificate_hash": "152d87f7cfe3c3e713fedae93f34ccafb30670a6"
+          }
+        },
+        {
+          "client_id": "66235086351-0nr4utl55tatcmir9qdb3t6ccm1vto1c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3ABCNI-qFZiQTuJDagVL5cFWlFkZj5nY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "66235086351-0nr4utl55tatcmir9qdb3t6ccm1vto1c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
