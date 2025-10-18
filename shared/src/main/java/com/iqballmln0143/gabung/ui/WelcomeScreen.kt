@@ -1,8 +1,6 @@
 package com.iqballmln0143.gabung.ui
 
-import android.R.attr.id
 import android.graphics.drawable.AdaptiveIconDrawable
-import android.media.tv.TvContract
 import android.os.Build
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
@@ -11,6 +9,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Text
@@ -34,33 +33,33 @@ private fun adaptiveIconPainterResource(@DrawableRes id: Int): Painter {
     val res = LocalContext.current.resources
     val theme = LocalContext.current.theme
 
-    return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+    return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
         val adaptiveIcon = ResourcesCompat.getDrawable(res, id, theme)
-        as? AdaptiveIconDrawable
-        if ( adaptiveIcon !=null){
+                as? AdaptiveIconDrawable
+        if (adaptiveIcon != null) {
             BitmapPainter(adaptiveIcon.toBitmap().asImageBitmap())
-        }else{
+        } else {
             painterResource(id)
         }
-    }else{
+    } else {
         painterResource(id)
-        }
     }
+}
+
 @Composable
-private fun WelcomeScreen(
+fun WelcomeScreen(
     @DrawableRes appLogo: Int,
     @StringRes appName: Int,
     modifier: Modifier = Modifier
-){
-    Column  (
+) {
+    Column(
         modifier = modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
-
-    ){
+    ) {
         Image(
             modifier = Modifier
-                .fillMaxSize(0.5f)
+                .fillMaxWidth(0.5f)
                 .padding(bottom = 32.dp)
                 .aspectRatio(1f)
                 .clip(CircleShape),
