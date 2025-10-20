@@ -54,7 +54,6 @@ dependencies {
     implementation(libs.coil.compose)
     implementation(libs.androidx.material3)
     implementation("androidx.compose.material:material-icons-extended:1.6.0")
-    implementation(libs.androidx.compose.runtime)
 
 
     testImplementation(libs.junit)

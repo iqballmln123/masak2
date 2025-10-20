@@ -13,7 +13,7 @@ import com.iqballmln0143.gabung.ui.WelcomeScreen
 
 @Composable
 fun UserApp(){
-    val viewModel: AppViewModel = viewModel()
+    val viewModel: UserViewModel = viewModel()
     val userFlow by viewModel.userFlow.collectAsState()
 
     if (userFlow == null){

@@ -1,4 +1,4 @@
-package com.iqballmln0143.gabung.ui.util
+package com.iqballmln0143.gabung.util
 
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
